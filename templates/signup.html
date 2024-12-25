@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+<body>
+    <div class="outer-container left">
+        <div class="inner-container-left">
+            <div class="illustration">
+                <img src="/static/images/Register.png" alt="Teaching Illustration">
+            </div>
+        </div>
+    </div>
+    <div class="outer-container right">
+        <div class="inner-container-right">
+            <div class="register-form">
+                <div class="logo">
+                    <img src="/static/images/Crystal Logo.png" alt="Crystal Delta Logo">
+                </div>
+                <h4>Please Fill out Form to Register!</h4>
+                <form method="POST" action="/register">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" class="btn-register">Register</button>
+                </form>
+                <p class="login-link">
+                    Yes, I have an account? <a href="/login">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
